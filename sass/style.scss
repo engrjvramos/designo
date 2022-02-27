@@ -1,0 +1,18 @@
+//* BASE *//
+@import './base/mixins';
+@import './base/animations';
+@import './base/base';
+@import './base/utilities';
+
+//* COMPONENTS *//
+@import './components/header';
+@import './components/footer';
+
+//* PAGES *//
+@import './pages/index';
+@import './pages/about';
+@import './pages/web-design';
+@import './pages/app-design';
+@import './pages/graphic-design';
+@import './pages/locations';
+@import './pages/contact';
