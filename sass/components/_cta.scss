@@ -1,0 +1,35 @@
+.cta {
+	height: 29.2rem;
+	transform: translateY(7.2rem);
+	margin-block-start: 8.8rem;
+
+	.container {
+		background-color: var(--clr-peach);
+		border-radius: 1.5rem;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding-inline: 9.5rem;
+		background-image: url(../../assets/shared/desktop/bg-pattern-call-to-action.svg);
+		background-position: right 0 top 50%;
+		background-repeat: no-repeat;
+	}
+
+	.cta--content {
+		color: var(--clr-white);
+
+		span {
+			display: block;
+			max-width: 26.8rem;
+			font-size: 4rem;
+			font-weight: 500;
+			line-height: 4rem;
+			margin-bottom: 2.2rem;
+		}
+
+		p {
+			max-width: 45.9rem;
+		}
+	}
+}
