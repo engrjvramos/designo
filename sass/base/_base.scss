@@ -28,6 +28,7 @@ body {
 	font-weight: 400;
 	min-height: 100vh;
 	display: grid;
+	grid-template-rows: min-content 1fr min-content;
 }
 
 h1 {
@@ -91,6 +92,12 @@ a {
 
 li {
 	list-style-type: none;
+}
+
+header,
+main,
+footer {
+	padding-inline: 4rem;
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -1,0 +1,49 @@
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
+
+.container {
+	max-width: 111rem;
+	margin: 0 auto;
+}
+
+.btn {
+	cursor: pointer;
+	display: grid;
+	place-items: center;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 1.5rem;
+	letter-spacing: 1px;
+	width: 15.2rem;
+	height: 5.6rem;
+	border-radius: 0.8rem;
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary {
+	color: var(--clr-grey-dark);
+	background-color: var(--clr-white);
+
+	&:hover {
+		background-color: var(--clr-peach-light);
+		color: var(--clr-white);
+	}
+}
+
+.btn-secondary {
+	color: var(--clr-white);
+	background-color: var(--clr-peach);
+
+	&:hover {
+		background-color: var(--clr-peach-light);
+	}
+}
