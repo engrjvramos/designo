@@ -1,10 +1,16 @@
 header {
 	padding-block: 6.4rem;
+	padding-inline: 4rem;
 	background-color: var(--clr-white);
+	width: 100%;
 
 	@include respond(mobile) {
 		padding-block: 3.45rem;
 		padding-inline: 2.4rem;
+	}
+
+	@include respond(mobileXS) {
+		padding-inline: 1.2rem;
 	}
 
 	.container {
@@ -12,6 +18,7 @@ header {
 		align-items: center;
 		justify-content: space-between;
 		height: 2.7rem;
+		width: 100%;
 
 		.logo {
 			width: 19.6rem;

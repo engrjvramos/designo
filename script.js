@@ -11,12 +11,14 @@ const openMobileNav = () => {
 	primaryNav.setAttribute('data-visible', true);
 	overlay.setAttribute('data-visible', true);
 	navToggle.setAttribute('aria-expanded', true);
+	document.body.style.overflow = 'hidden';
 };
 
 const closeMobileNav = () => {
 	primaryNav.setAttribute('data-visible', false);
 	overlay.setAttribute('data-visible', false);
 	navToggle.setAttribute('aria-expanded', false);
+	document.body.style.overflow = 'auto';
 };
 
 navToggle.addEventListener('click', () => {
