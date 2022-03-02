@@ -1,0 +1,80 @@
+.cards {
+	padding-inline: 4rem;
+
+	@include respond(mobile) {
+		padding-inline: 2.4rem;
+	}
+
+	.container {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		column-gap: 3rem;
+		row-gap: 3.2rem;
+
+		@include respond(tab-port) {
+			grid-template-columns: 1fr;
+		}
+
+		@include respond(mobile) {
+			row-gap: 4rem;
+		}
+
+		.card {
+			cursor: pointer;
+			background-color: var(--clr-peach-light-2);
+			border-radius: 1.5rem;
+			overflow: hidden;
+			transition: background-color 0.3s ease, color 0.3s ease;
+
+			@include respond(tab-port) {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+			}
+
+			@include respond(mobile) {
+				display: block;
+			}
+
+			&:hover {
+				background-color: var(--clr-peach);
+
+				h3,
+				p {
+					color: var(--clr-white);
+				}
+			}
+
+			&__img {
+				img {
+					height: 100%;
+					width: 100%;
+					object-fit: cover;
+				}
+			}
+
+			&__details {
+				padding: 3.2rem;
+				text-align: center;
+
+				@include respond(tab-port) {
+					align-self: center;
+				}
+
+				@include respond(mobile) {
+					padding: 3.2rem 3rem;
+					align-self: unset;
+					width: 100%;
+				}
+
+				h3 {
+					color: var(--clr-peach);
+					margin-bottom: 1rem;
+				}
+
+				p {
+					color: var(--clr-grey-dark);
+				}
+			}
+		}
+	}
+}

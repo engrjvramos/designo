@@ -13,6 +13,7 @@
 	--clr-black: #1d1c1e;
 	--clr-white: #ffffff;
 	--clr-peach-light: #ffad9b;
+	--clr-peach-light-2: #fdf3f0;
 	--clr-grey-dark: #333136;
 	--clr-grey-light: #f1f3f5;
 }
@@ -101,18 +102,12 @@ li {
 }
 
 main {
-	padding-block-end: 38rem;
 	background-image: url(../assets/shared/desktop/bg-pattern-leaf.svg);
 	background-repeat: no-repeat;
 	background-position: top 32rem left 0;
 
 	@include respond(tab-port) {
-		padding-block-end: 33.1rem;
 		background-image: none;
-	}
-
-	@include respond(mobile) {
-		padding-block-end: 31.1rem;
 	}
 }
 

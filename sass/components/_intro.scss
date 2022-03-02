@@ -1,0 +1,42 @@
+.intro {
+	padding-inline: 4rem;
+
+	@include respond(mobile) {
+		padding-inline: 0;
+	}
+
+	.container {
+		background-color: var(--clr-peach);
+		border-radius: 1.5rem;
+		padding-block: 6.4rem;
+		text-align: center;
+		color: var(--clr-white);
+		background-repeat: no-repeat;
+
+		@include respond(tab-port) {
+			background-image: url(../../assets/shared/tablet/bg-pattern-design-pages-intro-tablet.svg);
+			background-position: left -2.125rem top 50%;
+		}
+
+		@include respond(mobile) {
+			background-image: url(../../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg);
+			background-position: right 0 top 0;
+			border-radius: 0;
+			padding-block: 10.5rem;
+			padding-inline: 2.4rem;
+		}
+
+		h1 {
+			margin-bottom: 2.4rem;
+		}
+
+		p {
+			max-width: 40rem;
+			margin-inline: auto;
+
+			@include respond(mobile) {
+				max-width: 100%;
+			}
+		}
+	}
+}

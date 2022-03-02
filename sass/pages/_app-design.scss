@@ -1,0 +1,19 @@
+.app-design {
+	background-position: left 0 top 12.6rem;
+	padding-block-end: 17.2rem;
+
+	@include respond(tab-port) {
+		padding-block-end: 26.5rem;
+	}
+
+	@include respond(mobile) {
+		padding-block-end: 16.6rem;
+	}
+}
+
+.intro-app-design {
+	.container {
+		background-image: url(../assets/app-design/desktop/bg-pattern-intro-app.svg);
+		background-position: left -5.8rem top 50%;
+	}
+}

@@ -32,12 +32,12 @@
 			justify-content: center;
 			row-gap: 3.2rem;
 			text-align: center;
-			background-position: left 0 top 50%;
+			background-position: left -2rem top 50%;
 			padding-block: 5.7rem;
 		}
 
 		@include respond(mobile) {
-			background-position: right -30rem top 50%;
+			background-position: right -31rem top -10.2rem;
 			padding-inline: 2.4rem;
 			justify-content: initial;
 			padding-block: 6.4rem;

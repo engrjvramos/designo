@@ -1,0 +1,168 @@
+.project-links {
+	padding-inline: 4rem;
+
+	@include respond(mobile) {
+		padding-inline: 2.4rem;
+	}
+
+	.container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 3rem;
+		row-gap: 2.4rem;
+
+		@include respond(tab-port) {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	.project-link {
+		display: grid;
+		place-content: center;
+		text-align: center;
+		position: relative;
+		border-radius: 1.5rem;
+		background-repeat: no-repeat;
+		background-size: cover;
+		color: var(--clr-white);
+		text-transform: uppercase;
+		padding-block: 10.7rem;
+		overflow: hidden;
+		z-index: 1;
+
+		@include respond(tab-port) {
+			padding-block: 5.3rem;
+		}
+
+		@include respond(mobile) {
+			padding-block: 9rem;
+		}
+
+		&::before {
+			content: '';
+			position: absolute;
+			inset: 0 0 0 0;
+			background-image: linear-gradient(
+				to bottom right,
+				rgba(231, 129, 104, 0.7),
+				rgba(255, 173, 155, 0.5)
+			);
+			z-index: -1;
+			opacity: 0;
+			transition: opacity 0.3s ease;
+		}
+
+		&:hover::before {
+			opacity: 1;
+		}
+
+		h2 {
+			padding-inline: 1rem;
+			margin-bottom: 2.4rem;
+
+			@include respond(mobile) {
+				margin-bottom: 1.2rem;
+			}
+		}
+
+		.view-projects {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			span {
+				text-transform: uppercase;
+				font-weight: 500;
+				font-size: 1.5rem;
+				letter-spacing: 5px;
+				margin-right: 2.1rem;
+
+				@include respond(mobile) {
+					margin-right: 1.6rem;
+				}
+			}
+		}
+	}
+
+	.web-design-link {
+		background-image: linear-gradient(
+				to bottom right,
+				rgba(0, 0, 0, 0.6),
+				rgba(0, 0, 0, 0.4)
+			),
+			url(../../assets/home/desktop/image-web-design-large.jpg);
+		background-position: bottom;
+
+		@include respond(tab-port) {
+			background-image: linear-gradient(
+					to bottom right,
+					rgba(0, 0, 0, 0.6),
+					rgba(0, 0, 0, 0.4)
+				),
+				url(../../assets/home/tablet/image-web-design.jpg);
+		}
+
+		@include respond(mobile) {
+			background-image: linear-gradient(
+					to bottom right,
+					rgba(0, 0, 0, 0.6),
+					rgba(0, 0, 0, 0.4)
+				),
+				url(../../assets/home/mobile/image-web-design.jpg);
+		}
+	}
+
+	.app-design-link {
+		background-image: linear-gradient(
+				to bottom right,
+				rgba(0, 0, 0, 0.6),
+				rgba(0, 0, 0, 0.4)
+			),
+			url(../../assets/home/desktop/image-app-design.jpg);
+
+		@include respond(tab-port) {
+			background-image: linear-gradient(
+					to bottom right,
+					rgba(0, 0, 0, 0.6),
+					rgba(0, 0, 0, 0.4)
+				),
+				url(../../assets/home/tablet/image-app-design.jpg);
+		}
+
+		@include respond(mobile) {
+			background-image: linear-gradient(
+					to bottom right,
+					rgba(0, 0, 0, 0.6),
+					rgba(0, 0, 0, 0.4)
+				),
+				url(../../assets/home/mobile/image-app-design.jpg);
+		}
+	}
+
+	.graphic-design-link {
+		background-image: linear-gradient(
+				to bottom right,
+				rgba(0, 0, 0, 0.6),
+				rgba(0, 0, 0, 0.4)
+			),
+			url(../../assets/home/desktop/image-graphic-design.jpg);
+
+		@include respond(tab-port) {
+			background-image: linear-gradient(
+					to bottom right,
+					rgba(0, 0, 0, 0.6),
+					rgba(0, 0, 0, 0.4)
+				),
+				url(../../assets/home/tablet/image-graphic-design.jpg);
+		}
+
+		@include respond(mobile) {
+			background-image: linear-gradient(
+					to bottom right,
+					rgba(0, 0, 0, 0.6),
+					rgba(0, 0, 0, 0.4)
+				),
+				url(../../assets/home/mobile/image-graphic-design.jpg);
+		}
+	}
+}
