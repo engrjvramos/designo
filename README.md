@@ -1,4 +1,4 @@
-# Space Tourism Website | Frontend Mentor
+# Designo | Frontend Mentor
 
 This is a solution to the [Designo multi-page website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/designo-multipage-website-G48K6rfUT).
 
