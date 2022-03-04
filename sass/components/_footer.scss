@@ -86,6 +86,10 @@ footer {
 			column-gap: 5rem;
 		}
 
+		@include respond(tab-port-small) {
+			column-gap: 1rem;
+		}
+
 		@include respond(mobile) {
 			flex-direction: column;
 			justify-content: initial;
@@ -101,6 +105,10 @@ footer {
 
 			@include respond(tab-port) {
 				column-gap: 1rem;
+			}
+
+			@include respond(tab-port-small) {
+				column-gap: 0;
 			}
 
 			@include respond(mobile) {
@@ -163,5 +171,17 @@ footer {
 				}
 			}
 		}
+	}
+}
+
+.footer--contact {
+	padding-block: 7.2rem;
+
+	@include respond(tab-port) {
+		padding-block: 8rem;
+	}
+
+	@include respond(mobile) {
+		padding-block: 6.4rem;
 	}
 }

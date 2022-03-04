@@ -1,0 +1,166 @@
+.contact {
+	background-position: right 0 bottom -16rem;
+	padding-block-end: 0;
+}
+
+.contact-primary {
+	padding-inline: 4rem;
+
+	@include respond(mobile) {
+		padding-inline: 0;
+	}
+
+	.container {
+		display: grid;
+		grid-template-columns: 0.58fr 0.42fr;
+		border-radius: 1.5rem;
+		overflow: hidden;
+		background-color: var(--clr-peach);
+		background-image: url(../assets/contact/desktop/bg-pattern-hero-desktop.svg);
+		background-repeat: no-repeat;
+		background-position: bottom 0 left 0;
+
+		@include respond(tab-port) {
+			grid-template-columns: 1fr;
+			row-gap: 4rem;
+			padding-block: 7.1rem;
+			padding-inline: 5.8rem;
+			background-position: left -12.155rem top -8.3rem;
+		}
+
+		@include respond(mobile) {
+			padding-block: 7.2rem;
+			padding-inline: 2.4rem;
+			row-gap: 4.8rem;
+			border-radius: 0;
+			background-image: url(../assets/contact/mobile/bg-pattern-hero-contact-mobile.svg);
+			background-position: left -9.2rem top 0;
+		}
+	}
+
+	.contact--intro {
+		padding-block: 13.5rem 16.1rem;
+		padding-inline-start: 9.5rem;
+		padding-inline-end: 10rem;
+		text-align: left;
+		color: var(--clr-white);
+
+		@include respond(tab-port) {
+			padding-block: 0;
+			padding-inline: 0;
+		}
+
+		@include respond(mobile) {
+			text-align: center;
+		}
+
+		h1 {
+			margin-bottom: 3.2rem;
+
+			@include respond(mobile) {
+				margin-bottom: 2.4rem;
+			}
+		}
+	}
+
+	.contact--form {
+		display: grid;
+		align-content: center;
+		padding-inline-end: 9.6rem;
+
+		@include respond(tab-port) {
+			padding-block: 0;
+			padding-inline: 0;
+		}
+
+		.form-control {
+			position: relative;
+			margin-bottom: 2.5rem;
+			border-bottom: 1px solid var(--clr-white);
+
+			&:last-of-type {
+				@include respond(mobile) {
+					margin-bottom: 4rem;
+				}
+			}
+
+			input,
+			textarea {
+				cursor: pointer;
+				display: block;
+				width: 100%;
+				background-color: transparent;
+				color: var(--clr-white);
+				font-weight: 500;
+				font-size: 1.5rem;
+				line-height: 2.6rem;
+				padding-inline-start: 1.6rem;
+				padding-block-end: 1.1rem;
+				border-bottom: 3px solid transparent;
+				transition: all 0.3s ease;
+
+				@include respond(tab-port) {
+					padding-inline-start: 2.4rem;
+				}
+
+				@include respond(mobile) {
+					padding-inline-start: 1.4rem;
+				}
+
+				&:focus {
+					border-bottom: 3px solid var(--clr-white);
+				}
+			}
+
+			textarea {
+				height: 10.2rem;
+			}
+
+			::placeholder {
+				color: rgba(255, 255, 255, 0.5);
+				text-transform: capitalize;
+				font-size: 1.5rem;
+				font-weight: 500;
+				line-height: 2.6rem;
+			}
+
+			.error-container {
+				display: none;
+				align-items: center;
+				column-gap: 0.9rem;
+				position: absolute;
+				right: 0;
+				top: 0;
+
+				&.active {
+					display: flex;
+				}
+
+				span,
+				img {
+					display: block;
+				}
+
+				span {
+					color: var(--clr-white);
+					font-style: italic;
+					font-size: 1.2rem;
+					line-height: 2.6rem;
+				}
+
+				img {
+					width: 2rem;
+					height: 2rem;
+				}
+			}
+		}
+
+		.submit-btn {
+			justify-self: end;
+
+			@include respond(mobile) {
+				justify-self: center;
+			}
+		}
+	}
+}
