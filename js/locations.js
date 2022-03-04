@@ -8,21 +8,21 @@ const mapOne = L.map('mapOne').setView(coordsCA, 13);
 const mapTwo = L.map('mapTwo').setView(coordsAU, 13);
 const mapThree = L.map('mapThree').setView(coordsUK, 13);
 
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
 	attribution:
 		'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
 }).addTo(mapOne);
 
 L.marker(coordsCA).addTo(mapOne).openPopup();
 
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
 	attribution:
 		'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
 }).addTo(mapTwo);
 
 L.marker(coordsAU).addTo(mapTwo).openPopup();
 
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
 	attribution:
 		'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
 }).addTo(mapThree);
