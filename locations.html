@@ -13,8 +13,17 @@
   <!--======= MY CSS =======-->
   <link rel="stylesheet" href="./css/style.css">
 
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+
+  <script defer src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
   <!--======= MY JAVASCRIPT =======-->
-  <script defer src="./script.js"></script>
+  <script defer src="./js/script.js"></script>
+  <script defer src="./js/locations.js"></script>
 
   <!--======= TITLE =======-->
   <title>Locations - Designo</title>
@@ -75,20 +84,16 @@
               </div>
             </div>
           </div>
-          <div class="location__map img-container">
-            <img src="./assets/locations/desktop/image-map-canada.png" alt="" class="img-desktop">
-            <img src="./assets/locations/tablet/image-map-canada.png" alt="" class="img-tablet">
-            <img src="./assets/locations/desktop/image-map-canada.png" alt="" class="img-mobile">
+          <div class="location__map" id="mapOne">
+
           </div>
         </div>
 
         <!--======= AUSTRALIA =======-->
         <div class="location location--australia">
 
-          <div class="location__map img-container">
-            <img src="./assets/locations/desktop/image-map-australia.png" alt="" class="img-desktop">
-            <img src="./assets/locations/tablet/image-map-australia.png" alt="" class="img-tablet">
-            <img src="./assets/locations/desktop/image-map-australia.png" alt="" class="img-mobile">
+          <div class="location__map" id="mapTwo">
+
           </div>
 
           <div class="location__details">
@@ -126,10 +131,8 @@
               </div>
             </div>
           </div>
-          <div class="location__map img-container">
-            <img src="./assets/locations/desktop/image-map-united-kingdom.png" alt="" class="img-desktop">
-            <img src="./assets/locations/tablet/image-map-uk.png" alt="" class="img-tablet">
-            <img src="./assets/locations/desktop/image-map-united-kingdom.png" alt="" class="img-mobile">
+          <div class="location__map" id="mapThree">
+
           </div>
         </div>
       </div>
