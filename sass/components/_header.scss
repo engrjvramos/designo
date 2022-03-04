@@ -21,12 +21,8 @@ header {
 		width: 100%;
 
 		.logo {
-			width: 19.5rem;
+			width: 20rem;
 			height: 100%;
-
-			@include respond(tab-port) {
-				width: 19.7rem;
-			}
 
 			a {
 				display: block;

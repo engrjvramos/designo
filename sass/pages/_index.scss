@@ -54,6 +54,7 @@
 		background-image: url(../assets/home/desktop/bg-pattern-hero-home.svg);
 		background-repeat: no-repeat;
 		background-position: right 0;
+		height: 64rem;
 
 		@include respond(tab-land) {
 			padding-inline-start: 6rem;
@@ -63,7 +64,7 @@
 			grid-template-columns: 1fr;
 			background-position: left 17.55rem top 50%;
 			padding-inline-start: 0;
-			max-height: 84.3rem;
+			height: 84.3rem;
 		}
 
 		@include respond(mobile) {
@@ -81,8 +82,6 @@
 	.hero__content {
 		display: grid;
 		align-content: center;
-		padding-block: 14.5rem;
-
 		color: var(--clr-white);
 		width: 100%;
 		height: 100%;
@@ -105,7 +104,7 @@
 
 		h1 {
 			max-width: 54rem;
-			margin-bottom: 4rem;
+			margin-bottom: 3rem;
 
 			@include respond(tab-land) {
 				max-width: 48rem;
@@ -164,11 +163,15 @@
 
 			@include respond(tab-port) {
 				display: block;
-				width: 90%;
+				width: 85%;
 				position: absolute;
 				top: -17rem;
 				left: 50%;
 				transform: translateX(-50%);
+			}
+
+			@include respond(tab-port-small) {
+				width: 90%;
 			}
 
 			@include respond(mobile) {
@@ -279,5 +282,13 @@
 			rgba(93, 2, 2, 0.1),
 			rgba(93, 2, 2, 0.01)
 		);
+	}
+
+	.box-3 p {
+		max-width: 34rem;
+
+		@include respond(tab-port) {
+			max-width: unset;
+		}
 	}
 }
