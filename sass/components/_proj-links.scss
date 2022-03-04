@@ -90,7 +90,7 @@
 				rgba(0, 0, 0, 0.6),
 				rgba(0, 0, 0, 0.4)
 			),
-			url(../../assets/home/desktop/image-web-design-large.jpg);
+			url(../assets/home/desktop/image-web-design-large.jpg);
 		background-position: bottom;
 
 		@include respond(tab-port) {
@@ -99,7 +99,7 @@
 					rgba(0, 0, 0, 0.6),
 					rgba(0, 0, 0, 0.4)
 				),
-				url(../../assets/home/tablet/image-web-design.jpg);
+				url(../assets/home/tablet/image-web-design.jpg);
 		}
 
 		@include respond(mobile) {
@@ -108,7 +108,7 @@
 					rgba(0, 0, 0, 0.6),
 					rgba(0, 0, 0, 0.4)
 				),
-				url(../../assets/home/mobile/image-web-design.jpg);
+				url(../assets/home/mobile/image-web-design.jpg);
 		}
 	}
 
@@ -118,7 +118,7 @@
 				rgba(0, 0, 0, 0.6),
 				rgba(0, 0, 0, 0.4)
 			),
-			url(../../assets/home/desktop/image-app-design.jpg);
+			url(../assets/home/desktop/image-app-design.jpg);
 
 		@include respond(tab-port) {
 			background-image: linear-gradient(
@@ -126,7 +126,7 @@
 					rgba(0, 0, 0, 0.6),
 					rgba(0, 0, 0, 0.4)
 				),
-				url(../../assets/home/tablet/image-app-design.jpg);
+				url(../assets/home/tablet/image-app-design.jpg);
 		}
 
 		@include respond(mobile) {
@@ -135,7 +135,7 @@
 					rgba(0, 0, 0, 0.6),
 					rgba(0, 0, 0, 0.4)
 				),
-				url(../../assets/home/mobile/image-app-design.jpg);
+				url(../assets/home/mobile/image-app-design.jpg);
 		}
 	}
 
@@ -145,7 +145,7 @@
 				rgba(0, 0, 0, 0.6),
 				rgba(0, 0, 0, 0.4)
 			),
-			url(../../assets/home/desktop/image-graphic-design.jpg);
+			url(../assets/home/desktop/image-graphic-design.jpg);
 
 		@include respond(tab-port) {
 			background-image: linear-gradient(
@@ -153,7 +153,7 @@
 					rgba(0, 0, 0, 0.6),
 					rgba(0, 0, 0, 0.4)
 				),
-				url(../../assets/home/tablet/image-graphic-design.jpg);
+				url(../assets/home/tablet/image-graphic-design.jpg);
 		}
 
 		@include respond(mobile) {
@@ -162,7 +162,7 @@
 					rgba(0, 0, 0, 0.6),
 					rgba(0, 0, 0, 0.4)
 				),
-				url(../../assets/home/mobile/image-graphic-design.jpg);
+				url(../assets/home/mobile/image-graphic-design.jpg);
 		}
 	}
 }
