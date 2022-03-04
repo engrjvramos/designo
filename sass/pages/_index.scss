@@ -85,6 +85,7 @@
 		color: var(--clr-white);
 		width: 100%;
 		height: 100%;
+		z-index: 2;
 
 		@include respond(bp-1200) {
 			padding-block: 9.5rem;
@@ -160,10 +161,11 @@
 
 		img {
 			display: none;
+			z-index: 1;
 
 			@include respond(tab-port) {
 				display: block;
-				width: 85%;
+				width: 80%;
 				position: absolute;
 				top: -17rem;
 				left: 50%;
@@ -171,13 +173,17 @@
 			}
 
 			@include respond(tab-port-small) {
-				width: 90%;
+				width: 100%;
 			}
 
 			@include respond(mobile) {
 				top: 8rem;
-				width: 100%;
+				width: 70%;
 				transform: translateX(-50%) scale(1.6);
+			}
+
+			@include respond(bp-550) {
+				width: 80%;
 			}
 		}
 	}
