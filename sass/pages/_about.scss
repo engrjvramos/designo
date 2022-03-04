@@ -2,6 +2,7 @@
 	background-position: left 0 top 32rem;
 	padding-block-end: 17.2rem;
 	position: relative;
+	animation: opacity-transition 1s;
 
 	@include respond(tab-port) {
 		padding-block-end: 26.5rem;

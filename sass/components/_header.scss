@@ -21,8 +21,12 @@ header {
 		width: 100%;
 
 		.logo {
-			width: 19.6rem;
+			width: 19.5rem;
 			height: 100%;
+
+			@include respond(tab-port) {
+				width: 19.7rem;
+			}
 
 			a {
 				display: block;
@@ -127,6 +131,10 @@ header {
 				}
 
 				li {
+					font-size: 1.4rem;
+					line-height: 1.4rem;
+					letter-spacing: 2px;
+
 					@include respond(mobile) {
 						width: 100%;
 						font-size: 2.4rem;
@@ -135,11 +143,16 @@ header {
 					}
 
 					a {
+						color: var(--clr-grey-dark);
 						border-bottom: 1px solid transparent;
 						transition: border-bottom 0.3s ease;
 
 						&:hover {
 							border-bottom: 1px solid grey;
+						}
+
+						@include respond(mobile) {
+							color: var(--clr-white);
 						}
 					}
 				}

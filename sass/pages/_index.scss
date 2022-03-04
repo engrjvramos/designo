@@ -1,13 +1,13 @@
 .home {
 	position: relative;
-	padding-block-end: 31rem;
+	padding-block-end: 22rem;
 
 	@include respond(tab-port) {
-		padding-block-end: 33.2rem;
+		padding-block-end: 26.4rem;
 	}
 
 	@include respond(mobile) {
-		padding-block-end: 31.1rem;
+		padding-block-end: 19rem;
 	}
 
 	&::before {
@@ -38,37 +38,32 @@
 }
 
 .hero {
-	height: 64rem;
 	padding-inline: 4rem;
-
-	@include respond(tab-port) {
-		height: 84.3rem;
-	}
 
 	@include respond(mobile) {
 		padding-inline: 0;
 	}
 
 	.container {
-		height: 100%;
-		background-color: var(--clr-peach);
+		display: grid;
+		grid-template-columns: 1fr 1fr;
 		padding-inline-start: 9.5rem;
 		border-radius: 1.5rem;
-		position: relative;
+		overflow: hidden;
+		background-color: var(--clr-peach);
 		background-image: url(../assets/home/desktop/bg-pattern-hero-home.svg);
 		background-repeat: no-repeat;
 		background-position: right 0;
-		position: relative;
-		overflow: hidden;
 
 		@include respond(tab-land) {
 			padding-inline-start: 6rem;
 		}
 
 		@include respond(tab-port) {
+			grid-template-columns: 1fr;
 			background-position: left 17.55rem top 50%;
 			padding-inline-start: 0;
-			padding-block-start: 6rem;
+			max-height: 84.3rem;
 		}
 
 		@include respond(mobile) {
@@ -81,84 +76,111 @@
 		@include respond(mobileXS) {
 			padding-block-start: 6rem;
 		}
-
-		&::before {
-			content: '';
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			background-image: url(../assets/home/desktop/image-hero-phone.png);
-			background-repeat: no-repeat;
-			background-position: right 0 top -3rem;
-
-			@include respond(tab-land) {
-				background-position: right -6rem top -3rem;
-			}
-
-			@include respond(tab-port) {
-				background-position: right 50% bottom -29.6rem;
-			}
-
-			@include respond(mobile) {
-				background-position: right 50% bottom -29.3rem;
-			}
-
-			@include respond(mobileXS) {
-				background-position: right 50% bottom -24.3rem;
-				background-size: 185%;
-			}
-		}
 	}
 
 	.hero__content {
 		display: grid;
 		align-content: center;
+		padding-block: 14.5rem;
+
 		color: var(--clr-white);
 		width: 100%;
 		height: 100%;
+
+		@include respond(bp-1200) {
+			padding-block: 9.5rem;
+		}
 
 		@include respond(tab-port) {
 			align-content: flex-start;
 			text-align: center;
 			justify-items: center;
+			padding-block: 6rem 0;
+		}
+
+		@include respond(mobile) {
+			padding-block: 0;
+			padding-inline: 2.4rem;
 		}
 
 		h1 {
 			max-width: 54rem;
+			margin-bottom: 4rem;
 
 			@include respond(tab-land) {
 				max-width: 48rem;
 			}
 
+			@include respond(tab-port) {
+				margin-bottom: 3.6rem;
+			}
+
 			@include respond(mobile) {
-				max-width: 85%;
+				max-width: 100%;
 			}
 		}
 
 		p {
 			max-width: 44.5rem;
-			margin-block: 4rem;
+			margin-bottom: 4rem;
 
 			@include respond(tab-port) {
-				max-width: 46rem;
-				margin-block: 3.6rem 2rem;
+				max-width: 44rem;
+				margin-bottom: 1.9rem;
 			}
 
 			@include respond(mobile) {
-				max-width: 85%;
-				margin-block: 3.1rem 2.4rem;
+				max-width: 100%;
+				margin-bottom: 2.4rem;
 			}
 		}
 
 		a {
-			width: min-content;
-			z-index: 9999;
+			display: inline-block;
+
+			@include respond(tab-port) {
+				margin-bottom: 6.9rem;
+			}
+
+			@include respond(mobile) {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.hero__img {
+		position: relative;
+		background-image: url(../assets/home/desktop/image-hero-phone.png);
+		background-repeat: no-repeat;
+		background-position: bottom -24rem right -7.5rem;
+
+		@include respond(tab-port) {
+			height: 45.7rem;
+			background-image: none;
+		}
+
+		img {
+			display: none;
+
+			@include respond(tab-port) {
+				display: block;
+				width: 90%;
+				position: absolute;
+				top: -17rem;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+
+			@include respond(mobile) {
+				top: 8rem;
+				width: 100%;
+				transform: translateX(-50%) scale(1.6);
+			}
 		}
 	}
 }
 
 .illustration {
-	height: 41.2rem;
 	padding-inline: 4rem;
 
 	@include respond(tab-port) {
@@ -177,7 +199,6 @@
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		column-gap: 3rem;
-		height: 100%;
 
 		@include respond(tab-port) {
 			grid-template-columns: 1fr;
@@ -207,7 +228,6 @@
 		@include respond(mobile) {
 			flex-direction: column;
 			text-align: center;
-			row-gap: 4.8rem;
 		}
 
 		.illustration-img {
@@ -215,6 +235,7 @@
 			height: 20.2rem;
 			border-radius: 50%;
 			flex-shrink: 0;
+			margin-bottom: 4.8rem;
 
 			img {
 				width: 100%;

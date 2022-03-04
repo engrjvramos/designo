@@ -75,11 +75,7 @@
 				font-weight: 500;
 				font-size: 1.5rem;
 				letter-spacing: 5px;
-				margin-right: 2.1rem;
-
-				@include respond(mobile) {
-					margin-right: 1.6rem;
-				}
+				margin-right: 1.6rem;
 			}
 		}
 	}

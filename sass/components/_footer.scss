@@ -1,16 +1,17 @@
 footer {
+	position: relative;
 	width: 100%;
 	background-color: var(--clr-black);
 	padding-inline: 4rem;
-	padding-block-end: 7.2rem;
+	padding-block: 14.4rem 7.2rem;
 
 	@include respond(tab-port) {
-		padding-block: 0 8rem;
+		padding-block: 16.6rem 8rem;
 	}
 
 	@include respond(mobile) {
 		padding-inline: 2.4rem;
-		padding-block: 0 6.4rem;
+		padding-block: 25.3rem 6.4rem;
 	}
 
 	@include respond(mobileXS) {
